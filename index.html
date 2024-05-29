@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>інтернет магазин самокатів</title>
+    <link rel="stylesheet" href="styil.css">
+    <link rel="icon" href="images/logoтип.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="menu-left">
+            <nav>
+                <div class="menu-item">
+                    <a href="рослини.html" href="#" onclick="showAllMice()">Меню</a>
+                    <div class="submenu">
+                        <a href="#" onclick="filterMice('hipe')">самокат hipe</a>
+                        <a href="#" onclick="filterMice('ethic')">Самокат ethic</a>
+                        <a href="#" onclick="filterMice('blunt')">Самокат bluntl</a>
+                        <a href="#" onclick="filterMice('tilt')">Самокат tilt</a>
+                        <a href="#" onclick="filterMice('mgp')">Самокат mgp</a>
+                        <a href="#" onclick="filterMice('nativ-stem')">Самокат nativ-stem</a>
+                        <a href="#" onclick="filterMice('strirker')">Самокат strirker</a>
+                        <a href="#" onclick="filterMice('indo')">Самокат indo</a>
+                        <a href="#" onclick="filterMice('root')">Самокат indo</a>
+                        <a href="#" onclick="filterMice('lucky')">Самокат indo</a>
+                    </div>
+                </div>
+                <a href="pronas.html">Про нас</a>
+                <a href="propozicii.html">Спеціальні пропозиціі</a>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="images/logoтип.jpg" alt="">
+        </div>
+
+        <div class="contact-info">
+            <p>Телефон: (044) 123-45-67</p>
+            <p>Адреса: Київ, вул. Хрещатик, 1</p>
+            <div class="social-links">
+                <a href="#"> <img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+                <a href="#"><img src="images/twiter.jpg" alt="Twiter"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="shopping_cart">
+            <div class="shopping">
+                <img src="images/koshiik.png">
+                <span class="quantity">0</span>
+            </div>
+        </div>
+        <div class="list">
+        </div>
+        <div class="cards">
+            <h1>Товари у кошику</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Закрити</div>
+            </div>
+        </div>
+        <h1>Самокати</h1>
+        <div class="samokat">
+            <div class="card hipe" onclick="openModal('modal1')">
+                <img src="images/1.jpg" alt="hipe-h5">
+                <h2>самокат</h2>
+                <p>є в наявності</p>
+                <p>2345грн</p>
+                <div class="product-ditails">
+                    <p>Зріст (см)145-175</p>
+                    <p>Компресія SCS</p>
+                    <p>Діаметр коліс (мм)110</p>
+                    <p>Вага самокату (кг)4,1</p>
+                    <p>Висота керма (см)62</p>
+                    <p>Ширина керма (см)54</p>
+                    <button onclick="addToCard(0)">Додати в кошик</button>
+                </div>
+                <button onclick="addToCard(0)">Додати в кошик</button>
+            </div>
+            <div class="card ethic" onclick="openModal('modal2')">
+                <img src="images/ethic.jpg" alt="ethic erawan">
+                <h2>самокат</h2>
+                <p>є в наявності</p>
+                <p>2345грн</p>
+                <div class="product-ditails">
+                    <p>Зріст (см)145-175</p>
+                    <p>Компресія SCS</p>
+                    <p>Діаметр коліс (мм)110</p>
+                    <p>Вага самокату (кг)4,1</p>
+                    <p>Висота керма (см)62</p>
+                    <p>Ширина керма (см)54</p>
+                    <button onclick="addToCard(1)">Додати в кошик</button>
+                </div>
+                <button onclick="addToCard(1)">Додати в кошик</button>
+            </div>
+        <div class="card blunt " onclick="openModal('modal3')">
+            <img src="images/blunt s8.jpg" alt="blunt s8">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+            <div class="product-ditails">
+                <p>Зріст (см)145-175</p>
+                <p>Компресія SCS</p>
+                <p>Діаметр коліс (мм)110</p>
+                <p>Вага самокату (кг)4,1</p>
+                <p>Висота керма (см)62</p>
+                <p>Ширина керма (см)54</p>
+                <button onclick="addToCard(2)">Додати в кошик</button>
+            </div>
+            <button onclick="addToCard(2)">Додати в кошик</button>
+        </div>
+        <div class="card nativ-stem" onclick="openModal('modal4')">
+            <img src="images/nativ stem.jpg" alt="nativ stem">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+            <div class="product-ditails">
+                <p>Зріст (см)145-175</p>
+                <p>Компресія SCS</p>
+                <p>Діаметр коліс (мм)110</p>
+                <p>Вага самокату (кг)4,1</p>
+                <p>Висота керма (см)62</p>
+                <p>Ширина керма (см)54</p>
+                <button onclick="addToCard(3)">Додати в кошик</button>
+            </div>
+            <button onclick="addToCard(3)">Додати в кошик</button>
+        </div>
+        <div class="card hipe ">
+            <img src="images/hipe.jpg" alt="hipe h3">
+            <h2>самокат</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card mgp">
+            <img src="images/mpg.jpg" alt="mgp">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card tilt ">
+            <img src="https://candyboards.com.ua/wp-content/uploads/2022/09/tryukovoj-samokat-tilt-contact-build-pro-scooter-blackout-e1662735342319.png"
+                alt=" tilt pasage">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card strirker ">
+            <img src="data:image/jpeg;base64,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"
+                alt="strirker">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card hipe ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5w9fJE3N3JpEBUCun_9sIurIqFZdpfs7N6g&usqp=CAU"
+                alt="">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card ethic ">
+            <img src="https://samokat.ua/images/products/DSCF2087_24w.jpg" alt="erawanv2">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card hipe ">
+            <img src="https://samokat.ua/images/products/Ethic_DTC_Pandora_Complete_Red_24w.jpg" alt="">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card ethic ">
+            <img src="https://samokat.ua/images/products/XL_Silver_brown_01_24w.jpg" alt="">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card indo">
+            <img src="https://samokat.ua/images/products/indo-pro-trampoline-scooter-01_24w.jpg" alt="">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card hipe ">
+            <img src="https://candyboards.com.ua/wp-content/uploads/2023/07/tryukovoj-samokat-fuzion-complete-pro-scooter-2022-z300-aqua.png"
+                alt="">
+            <h2>САМОКАТ</h2>
+            <p><b>є в наявності</b></p>
+            <p><b></b>2345 ГРН</b></p>
+        </div>
+        <div class="card ethic ">
+            <img src="https://samokat.ua/images/products/ethic-vulcain-12std-pro-scooter-black_01_24w.jpg" alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card  strirker">
+            <img src="https://samokat.ua/images/products/striker-gravis-pro-scooter-black_01_24w.jpg" alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card tilt ">
+            <img src="https://samokat.ua/images/products/tilt-theorem-build-pro-scooter-red_01_24w.jpg" alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card indo ">
+            <img src="https://samokat.ua/images/products/indo-x70-trampoline-scooter-01_24w.jpg" alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card blunt ">
+            <img src="https://samokat.ua/images/products/blunt-envy-prodigy-s8-street-pro-scooter-grey_01_24w.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card hipe ">
+            <img src="https://samokat.ua/images/products/Hipe_L20_Black_Brown_01_24w.jpg" alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card ethic ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/041370d67f42fcdf02d41b4ac606fa4d.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card blunt ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/952c2696dd595d6bf6eb88989eb20aed.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card blunt ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/9bc20a5d43780c2183711056d22e8a02.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card strirker ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/bb545a1d1c2fe94d2f80b9d553f9b4d1.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card root ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/747c5a5b058e24ecf5bc4b06ab9a2fd3.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card root ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/5db20641f01d28609bf051be9927f1e1.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card lucky ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/c2ac622bf227983a43f12c95dbae48d5.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card lucky ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/3220aa011eed12d66cae5c19c1b1f55c.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        <div class="card lucky ">
+            <img src="https://roller-zone.com.ua/uploads/shop/products/main/e469194f89a0cc6099d54cfd4f166325.jpg"
+                alt="">
+            <h2>самокат</h2>
+            <p>є в наявності</p>
+            <p>2345грн</p>
+        </div>
+        </div>
+    </main>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="images/ethic.jpg" alt="">
+                <div class="modal-info">
+                    <h2>Трюковий самокат Ethic Erawan Pro Scooter (Black-Rainbow)</h2>
+                    <p><strong>Опис:</strong>cамокат Erawan створювався навколо компресії ICS 10 (аналог HIC від Ethic)
+                        і вбивчо крутої вилки Legion, для міцної компресії і безпроблемних барспінов. Завдяки керму
+                        Dryade, цей скутер екстремально легкий, всього 2965 грам. Ідеальний для технічних трюків і
+                        паркового катання.</p>
+                    <p><strong>Характеристики</strong></p>
+                    <ul>
+                        <li>ріст (см)150-175</li>
+                        <li> Компресія ICS10</li>
+                        <li>Діаметр коліс (мм)110</li>
+                        <li>Вага самокату (кг)3</li>
+                        <li> Висота керма (см)62</li>
+                        <li>Ширина керма (см)56</li>
+                        <li> Висота керма від деки (см)79</li>
+                        <li>Довжина деки (см)53</li>
+                        <li>Ширина деки (см)11</li>
+                        <li>Робоча довжина деки (см)38</li>
+                        <li>Клас підшипників ABEC 9</li>
+                        <li>Макс. вага райдера (кг)100</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong>Стандартна доставка протягом 3-5 робочих днів.</p>
+                    <button onclick="addToCard(1)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="images/самокат335.jpg" alt="">
+                <div class="modal-info">
+                    <h2>Трюковий САМОКАТ HIPE H6 </h2>
+                    <p><strong>Опис:</strong>амокат Hipe H6 - новий безкомпромісний трюковий самокат для стрітового
+                        катання, розрахований для райдерів зростом понад 170 см. Починаючи з 2021-го року модель
+                        отримала систему компресії SCS, яка поширена в професійних трюкових самокатах, оскільки вона
+                        максимально стійка до стрибків і важких приземлень. Хоча вона має велику вагу, вона безвідмовна
+                        при постійному виконанні drop-in, backflip, і бар спинів. Компресія у зв'язці з високоміцним
+                        Т-подібним кермом з CrMo сталі без пропилу, дає максимально можливе стиснення з усіх, рульова
+                        колонка інтегрована і робить самокат легшим, а промислові зносостійкі підшипники і не вимагають
+                        постійного обслуговування. </p>
+                    <p><strong>Характеристики</strong></p>
+                    <ul>
+                        <li>Бренд Hipe</li>
+                        <li> Рік 2022 </li>
+                        <li> Вид Трюковий </li>
+                        <li> Матеріал рами Алюміній </li>
+                        <li> Максимальне навантаження до 100 кг </li>
+                        <li> Діаметр коліс 110 мм </li>
+                        <li> Жорсткість коліс 88A </li>
+                        <li> Матеріал коліс Поліуретан </li>
+                        <li> Клас підшипників ABEC 9 </li>
+                        <li> Довжина деки 56 см </li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong>Стандартна доставка протягом 3-5 робочих днів.</p>
+                    <button onclick="addToCard(0)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Телефон: (044) 123-45-67</p>
+                <p>Email: info@plantshop.com.ua</p>
+                <p>Адреса: Київ, вул. Хрещатик, 1</p>
+            </div>
+            <div class="footer-section">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="#">Доставка і оплата</a></li>
+                    <li><a href="#">Гарантія і повернення</a></li>
+                    <li><a href="#">Політика конфіденціальності</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Соціальні мережі</h3>
+                <a href="#"> <img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+                <a href="#"><img src="images/twiter.jpg" alt="Twiter"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
